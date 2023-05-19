@@ -41,8 +41,11 @@ export default function AboutPage() {
 
 const styles = StyleSheet.create({
   container: {
+    position: "absolute",
+    top: 0,
+    left: 0,
     width: "100%",
-    height: "100%",
+
     backgroundColor: "black",
     paddingLeft: 20,
     paddingRight: 20,
@@ -52,7 +55,7 @@ const styles = StyleSheet.create({
     fontSize: 32,
     fontWeight: "bold",
     color: "white",
-    marginTop: 50,
+    marginTop: 90,
   },
   introContainer: {
     backgroundColor: "white",

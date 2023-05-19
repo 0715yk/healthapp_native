@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "healthapp_native",
-    "slug": "healthapp_native",
+    "name": "Progressive Overload",
+    "slug": "progressiveOverload",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,25 +11,25 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.progressive.overload"
     },
     "android": {
+      "package": "com.healthappProgressive.overload",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.yongkini.healthapp_native"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "7ab7a344-da97-40f1-93b7-7773ef802b28"
+        "projectId": "38d7a055-ce01-4969-80c0-751be45aaf34"
       }
     }
   }

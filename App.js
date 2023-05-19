@@ -1,21 +1,27 @@
 import WebView from "react-native-webview";
 import { SafeAreaView, StyleSheet } from "react-native";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import AboutPage from "./About";
 
 const App = () => {
   const URI = "https://d1v4qnuyx40ush.cloudfront.net/";
+  
   const [nowEndpoint, setNowEndpoint] = useState(false);
 
   return (
     <SafeAreaView style={styles.root}>
-      {/* <WebView
+      <WebView
         source={{ uri: URI }}
         onMessage={(event) => {
-          setNowEndpoint(event.nativeEvent.data);
+          const { data } = JSON.parse(event.nativeEvent.data);
+          if (data === "about") {
+            setNowEndpoint(true);
+          } else {
+            setNowEndpoint(false);
+          }
         }}
-      /> */}
-      {<AboutPage />}
+      />
+      {nowEndpoint && <AboutPage />}
     </SafeAreaView>
   );
 };
