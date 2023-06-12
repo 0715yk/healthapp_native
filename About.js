@@ -13,7 +13,6 @@ export default function AboutPage() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Progressive-Overhead</Text>
       <View style={styles.introContainer}>
         <Image
           source={{
@@ -45,17 +44,11 @@ const styles = StyleSheet.create({
     top: 0,
     left: 0,
     width: "100%",
-
-    backgroundColor: "black",
-    paddingLeft: 20,
-    paddingRight: 20,
+    backgroundColor: "transparent",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
     alignItems: "center",
-  },
-  title: {
-    fontSize: 32,
-    fontWeight: "bold",
-    color: "white",
-    marginTop: 90,
   },
   introContainer: {
     backgroundColor: "white",
